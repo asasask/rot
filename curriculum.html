@@ -4,6 +4,7 @@
     <title>navv</title>
     <link rel="stylesheet" href="./stynav.css">
     <link rel="stylesheet" href="./sty2.css">
+    <script src='from.js'></script>
 </head>
 
     <nav class="pageNav">
@@ -24,12 +25,14 @@
 </p>
 </head>
 <body>
-  <form>
-    <label for="fname">query:</label><br>
-    <input type="text" id="fname" name="fname" value="John"><br>
-    <label for="lname">query:</label><br>
-    <input type="text" id="lname" name="lname" value="Doe">
-  </form>
+
+  <form name="myform" method="post" action="mailto:username@hotmail.com" onsubmit="return validateform()" > 
+   <div style="text-align:center;vertical-align:middle;"> First Name: <input type="text" name="AA"><br/> </div>
+    <div style="text-align:center;vertical-align:middle;"> Last Name :<input type="text" name="BB"><br/></div>
+      <div style="text-align:center;vertical-align:middle;"> Question :<input type="text" name="CC"><br/></div>
+        <div style="text-align:center;vertical-align:middle;"> PASSWORD: <input type="number" name="DD"><br/></div> 
+        <div style="text-align:center;vertical-align:middle;">  <input type="submit" value="register"> </div>
+    </form> 
  
 <header class="header">
     <div class="container">
